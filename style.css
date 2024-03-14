@@ -1,15 +1,69 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
+  background-color: #f0f8ff;
+  color: #333;
 }
 
 .container {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  color: #ff6b6b;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.resource {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+.resource img {
+  width: 80px;
+  height: 80px;
+}
+
+.resource p {
+  font-size: 18px;
+  margin-top: 5px;
 }
 
 button {
   margin: 5px;
-  padding: 10px;
-  font-size: 16px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4ecdc4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45b5a9;
+}
+
+#weather {
+  font-size: 24px;
+  color: #1a535c;
+}
+
+#lemonadePrice {
+  font-size: 24px;
+  color: #f7b731;
+}
+
+#money {
+  font-size: 36px;
+  color: #4ecdc4;
+  font-weight: 600;
 }
