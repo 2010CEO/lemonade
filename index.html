@@ -4,20 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lemonade Stand Game</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: #ff6b6b;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .resource {
+      display: inline-block;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .resource img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .resource p {
+      font-size: 18px;
+      margin-top: 5px;
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4ecdc4;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #45b5a9;
+    }
+
+    #weather {
+      font-size: 24px;
+      color: #1a535c;
+    }
+
+    #lemonadePrice {
+      font-size: 24px;
+      color: #f7b731;
+    }
+
+    #money {
+      font-size: 36px;
+      color: #4ecdc4;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h1>Lemonade Stand Game</h1>
     <p>Money: $<span id="money">0</span></p>
-    <p>Lemons: <span id="lemons">0</span></p>
-    <p>Sugar: <span id="sugar">0</span></p>
-    <p>Cups: <span id="cups">0</span></p>
+    <p>Weather: <span id="weather">Sunny</span></p>
+
+    <div class="resource">
+      <img src="lemon.png" alt="Lemon">
+      <p>Lemons: <span id="lemons">0</span></p>
+    </div>
+    <div class="resource">
+      <img src="sugar.png" alt="Sugar">
+      <p>Sugar: <span id="sugar">0</span></p>
+    </div>
+    <div class="resource">
+      <img src="cup.png" alt="Cup">
+      <p>Cups: <span id="cups">0</span></p>
+    </div>
+    <div class="resource">
+      <img src="lemonade.png" alt="Lemonade">
+      <p>Lemonade Price: $<span id="lemonadePrice">2</span></p>
+    </div>
+
     <button id="makeLemonade">Make Lemonade</button>
     <button id="sellLemonade">Sell Lemonade</button>
     <button id="buyLemons">Buy Lemons</button>
     <button id="buySugar">Buy Sugar</button>
     <button id="buyCups">Buy Cups</button>
+    <button id="upgradeLemonadeStand">Upgrade Lemonade Stand ($ <span id="lemonadeStandCost">50</span>)</button>
+    <button id="upgradeProducer">Upgrade Producer ($ <span id="producerCost">100</span>)</button>
   </div>
   <script src="script.js"></script>
 </body>
